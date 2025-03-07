@@ -39,25 +39,23 @@ latest_data = fetch_latest_data()
 
 st.set_page_config(layout="wide")
 
-# Force Light Theme using CSS
-light_theme_css = """
-<style>
-body {
-    background-color: white !important;
-    color: black !important;
-}
-[data-testid="stAppViewContainer"] {
-    background-color: white !important;
-}
-[data-testid="stHeader"] {
-    background-color: white !important;
-}
-[data-testid="stSidebar"] {
-    background-color: #f8f9fa !important;
-}
-</style>
-"""
-st.markdown(light_theme_css, unsafe_allow_html=True)
+# Set theme to light by default
+if "theme" not in st.session_state:
+    st.session_state.theme = "light"
+
+# Apply theme using JavaScript
+st.markdown(
+    """
+    <script>
+    var streamlitTheme = window.localStorage.getItem("streamlit-theme");
+    if (!streamlitTheme) {
+        window.localStorage.setItem("streamlit-theme", JSON.stringify({"base": "light"}));
+        window.location.reload();
+    }
+    </script>
+    """,
+    unsafe_allow_html=True
+)
 # st.markdown(
 #     """
 #     <style>
