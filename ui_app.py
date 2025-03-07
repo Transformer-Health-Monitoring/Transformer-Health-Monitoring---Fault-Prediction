@@ -73,28 +73,11 @@ st.markdown(
 #     <hr style="border: 2px solid #ccc; margin-top: -10px;">
 # """, unsafe_allow_html=True)
 
-# st.markdown("""
-#     <div style="
-#         background-color: black; 
-#         padding: 20px; 
-#         width: 100vw; 
-#         position: relative;
-#         left: -10px;">
-#         <h1 style="
-#             font-size: 2.5em; 
-#             color: white; 
-#             text-align: center;
-#             margin: 0;">
-#             Real-Time Transformer Monitoring & Fault Prediction
-#         </h1>
-#     </div>
-# """, unsafe_allow_html=True)
-
 
 st.markdown("""
     <div style="
         background-color: black; 
-        padding: 20px; 
+        padding: 15px; 
         border-radius: 8px;
         text-align: left;
         margin-top: -60px;">
@@ -107,12 +90,17 @@ st.markdown("""
     </div>
     
 """, unsafe_allow_html=True)
-# <hr style="border: 2px solid #ccc; margin-top: -10px;">
+
 
 
 
 # Embedding ThingSpeak Graphs
-st.markdown('<h4 style="margin-bottom: 5px;">Real-Time Sensor Data</h4>', unsafe_allow_html=True)
+# st.markdown('<h4 style="margin-bottom: 5px;">Real-Time Sensor Data</h4>', unsafe_allow_html=True)
+
+st.markdown("""
+    <h4 style="margin-bottom: 5px;">Real-Time Sensor Data</h4>
+    <hr style="border: 2px solid #ccc; margin-top: 5px;">
+""", unsafe_allow_html=True)
 
 
 
