@@ -107,7 +107,7 @@ st.markdown("""
     </div>
     
 """, unsafe_allow_html=True)
-<hr style="border: 2px solid #ccc; margin-top: -10px;">
+# <hr style="border: 2px solid #ccc; margin-top: -10px;">
 
 
 
