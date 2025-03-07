@@ -39,6 +39,19 @@ latest_data = fetch_latest_data()
 
 st.set_page_config(layout="wide")
 
+# Force Light Theme using custom CSS
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: white !important;
+        color: black !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # st.markdown(
 #     """
 #     <style>
