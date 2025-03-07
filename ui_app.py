@@ -99,7 +99,7 @@ st.markdown("""
 
 st.markdown("""
     <h4 style="margin-bottom: 5px;">Real-Time Sensor Data</h4>
-    <hr style="border: 2px solid #ccc; width: 66%; margin: 5px 0;">
+    <hr style="border: 2px solid #ccc; width: 66%; margin-top: -5px; margin-bottom: 10px; text-align: left;">
 """, unsafe_allow_html=True)
 
 
