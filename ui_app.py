@@ -76,19 +76,37 @@ st.markdown(
 st.markdown("""
     <div style="
         background-color: black; 
-        padding: 15px; 
-        border-radius: 8px;
-        text-align: left;
-        margin-top: -60px;">
+        padding: 20px; 
+        width: 100vw; 
+        position: relative;
+        left: -10px;">
         <h1 style="
             font-size: 2.5em; 
             color: white; 
+            text-align: center;
             margin: 0;">
             Real-Time Transformer Monitoring & Fault Prediction
         </h1>
     </div>
-    
 """, unsafe_allow_html=True)
+
+
+# st.markdown("""
+#     <div style="
+#         background-color: black; 
+#         padding: 15px; 
+#         border-radius: 8px;
+#         text-align: left;
+#         margin-top: -60px;">
+#         <h1 style="
+#             font-size: 2.5em; 
+#             color: white; 
+#             margin: 0;">
+#             Real-Time Transformer Monitoring & Fault Prediction
+#         </h1>
+#     </div>
+    
+# """, unsafe_allow_html=True)
 #<hr style="border: 2px solid #ccc; margin-top: -10px;">
 
 
