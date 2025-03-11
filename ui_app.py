@@ -40,22 +40,43 @@ latest_data = fetch_latest_data()
 st.set_page_config(layout="wide")
 
 # Set theme to light by default
-if "theme" not in st.session_state:
-    st.session_state.theme = "light"
+# if "theme" not in st.session_state:
+#     st.session_state.theme = "light"
 
-# Apply theme using JavaScript
+st.set_page_config(page_title="Real-Time Transformer Monitoring", layout="wide", initial_sidebar_state="collapsed")
+
+# Force Light Theme with CSS
 st.markdown(
     """
-    <script>
-    var streamlitTheme = window.localStorage.getItem("streamlit-theme");
-    if (!streamlitTheme) {
-        window.localStorage.setItem("streamlit-theme", JSON.stringify({"base": "light"}));
-        window.location.reload();
-    }
-    </script>
+    <style>
+        body, .stApp {
+            background-color: white !important;
+            color: black !important;
+        }
+        .css-18e3th9, .css-1d391kg {
+            background-color: white !important;
+            color: black !important;
+        }
+    </style>
     """,
     unsafe_allow_html=True
 )
+
+
+
+# # Apply theme using JavaScript
+# st.markdown(
+#     """
+#     <script>
+#     var streamlitTheme = window.localStorage.getItem("streamlit-theme");
+#     if (!streamlitTheme) {
+#         window.localStorage.setItem("streamlit-theme", JSON.stringify({"base": "light"}));
+#         window.location.reload();
+#     }
+#     </script>
+#     """,
+#     unsafe_allow_html=True
+# )
 # st.markdown(
 #     """
 #     <style>
