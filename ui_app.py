@@ -43,26 +43,6 @@ st.set_page_config(layout="wide")
 # if "theme" not in st.session_state:
 #     st.session_state.theme = "light"
 
-st.set_page_config(page_title="Real-Time Transformer Monitoring", layout="wide", initial_sidebar_state="collapsed")
-
-# Force Light Theme with CSS
-st.markdown(
-    """
-    <style>
-        body, .stApp {
-            background-color: white !important;
-            color: black !important;
-        }
-        .css-18e3th9, .css-1d391kg {
-            background-color: white !important;
-            color: black !important;
-        }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
-
 
 # # Apply theme using JavaScript
 # st.markdown(
